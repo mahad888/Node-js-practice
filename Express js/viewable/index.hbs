@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer">
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            overflow: hidden;
+        }
+        
+        .box {
+            background-color: #a4d5fd;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            padding: 20px;
+            border-radius: 10px;
+            text-align: center;
+            position: relative;
+        }
+        
+        
+        
+        #weathericon {
+            margin-top: 20px;
+        }
+        
+        .info {
+            margin-top: 20px;
+        }
+        
+        .location {
+            margin: 0;
+            padding: 0;
+            color: #333;
+        }
+        
+        .temp {
+            font-size: 2.5rem;
+            color: #503203;
+            margin: 0;
+            padding: 0;
+        }
+        
+        .tempminMax {
+            color: #555;
+        }
+        
+    </style>
+   
+    <title>Weather app</title>
+</head>
+<body>
+    <div class="box">
+        
+        <div id="weathericon">
+            <h1><i class="fa-regular fa-sun fa-lg" style="color: rgb(247, 211, 6);"></i></h1>
+        </div>
+
+        <div class="info">
+            <h2 class="location">
+                <i class="fa-solid fa-street-view fa-lg"></i>{%Location%}, {%Country%}
+            </h2>
+            <p><div id="date">Wed | Aug 09 | 1:08 AM</div></p>
+            <h1><div class="temp">{%temp%}&deg; C</div></h1>
+            <h3><div class="tempminMax">Min {%tempmin%}&deg; C | Max {%tempmax%}&deg; C </div></h3>
+        </div>
+    </div>
+</body>
+</html>
